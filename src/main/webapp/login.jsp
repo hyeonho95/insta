@@ -26,24 +26,29 @@
 			max-width:400px;
 		}
 	}
-
+	
 </style>
 <title>인스타그램</title>
 </head>
 <body>
 
-<div class="container-fluid p-0">
-	<div class="row mx-auto p-0" id="860px" style="max-width:800px">
-		<div class="col mx-auto bg-primary p-0" id="hidden" style="max-width: 400px; height: 500px;">
-		휴대폰사진
-		</div>
-		<div class="col mx-auto bg-secondary p-0"  style="max-width: 400px; height: 500px;">
-		로그인창
+	<div class="container-fluid p-0">
+		<div class="row mx-auto p-0" id="860px" style="max-width:800px">
+			<div class="col mx-auto bg-primary p-0" id="hidden" style="max-width: 400px; height: 500px;">
+			휴대폰사진
+			</div>
+			<div class="col mx-auto bg-secondary p-0"  style="max-width: 400px; height: 500px;">
+			로그인창
+			</div>
 		</div>
 	</div>
-</div>
 
 
+	<div class="container-fluid">
+		<div class="mx-auto mt-5 bg-primary" style="max-width:600px">정보란1</div>
+		<div class="mx-auto bg-primary" style="max-width:600px">정보란2</div>
+	</div>
+	
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
