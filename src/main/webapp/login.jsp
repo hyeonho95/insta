@@ -14,7 +14,7 @@
  	/* 작은 화면에서는 top margin이 사라집니다 */
 	@media ( min-width : 435px) {
 		body {
-			margin-top: 200px;
+			margin-top: 100px;
 		}
 	}
 	
@@ -34,19 +34,32 @@
 
 	<div class="container-fluid p-0">
 		<div class="row mx-auto p-0" id="860px" style="max-width:800px">
-			<div class="col mx-auto bg-primary p-0" id="hidden" style="max-width: 400px; height: 500px;">
-			휴대폰사진
+			<div class="col mx-auto p-0" id="hidden" style="max-width: 400px; height: 500px;">
+				<img src="./img/iphone.png"/>
+					<!--아이폰 화면의 이미지가 변경 -->
+					<!--  -->
+					<!--  -->
+					<!--  -->
 			</div>
-			<div class="col mx-auto bg-secondary p-0"  style="max-width: 400px; height: 500px;">
-			로그인창
+			<div class="col mx-auto p-0"  style="max-width: 400px; height: 500px;">
+				<div class="border h-75">
+					
+				</div>
+				<div class="mt-3 border h-25">
+					
+				</div>
+				웹을 다운로드하세요.
+				앱스토어 구글플레이
 			</div>
+			
 		</div>
 	</div>
 
-
-	<div class="container-fluid">
-		<div class="mx-auto mt-5 bg-primary" style="max-width:600px">정보란1</div>
-		<div class="mx-auto bg-primary" style="max-width:600px">정보란2</div>
+	<div class="mt-5">
+		<div class="position-relative">
+			<div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="max-width:600px">정보란1</div>
+			<div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="max-width:600px">정보란2</div>
+		</div>
 	</div>
 	
 
