@@ -27,6 +27,15 @@
 		}
 	}
 	
+	.form-floating .form-control{
+		max-height: 20px;
+	}
+	
+	.form-floating label{
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
 </style>
 <title>인스타그램</title>
 </head>
@@ -41,12 +50,28 @@
 					<!--  -->
 					<!--  -->
 			</div>
+			
+			
 			<div class="col mx-auto p-0"  style="max-width: 400px; height: 500px;">
 				<div class="border h-75">
+					<h3 class="text-center">Instagram</h3>
 					
+					<div class="form-floating mb-3 mx-auto w-75">
+						<input type="text" class="form-control" id="floatingInput" placeholder="name@example.com"">
+						<label for="floatingInput" class="text-secondary">전화번호, 사용자 이름 또는 이메일</label>
+					</div>
+					
+					<div class="form-floating mb-3 mx-auto w-75">
+						<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+						<label for="floatingPassword" class="text-secondary">비밀번호</label>
+					</div>
+					
+					<div class="d-grid gap-2 form-floating mx-auto w-75">
+						<button type="button" class="btn btn-info btn-sm">로그인</button>
+					</div>
 				</div>
+				
 				<div class="mt-3 border h-25">
-					
 				</div>
 				웹을 다운로드하세요.
 				<p>
@@ -57,9 +82,9 @@
 	</div>
 
 	<div class="mt-5">
-		<div class="position-relative">
-			<div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="max-width:600px">정보란1</div>
-			<div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="max-width:600px">정보란2</div>
+		<div class="fixed-bottom">
+			<div class="bg-primary" style="max-width:600px">정보란1</div>
+			<div class="bg-primary" style="max-width:600px">정보란2</div>
 		</div>
 	</div>
 	
