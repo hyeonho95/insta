@@ -11,6 +11,7 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 
  <style type="text/css">
+ 
  	/* 작은 화면에서는 top margin이 사라집니다 */
 	@media ( min-width : 435px) {
 		body {
@@ -23,10 +24,40 @@
 			display: none;
 		}
 		#860px{
-			max-width:400px;
+			max-width:300px;
 		}
 	}
 	
+	/* 로그인 버튼 */
+ 	.btn-primary{
+ 		background-color:#0096F6;
+ 		border-color:#0096F6;
+		font-weight: bold;
+	} 
+	.btn-primary:hover{
+		background-color:#0096F6;
+		border-color:#0096F6;
+		font-weight: bold;
+	}
+	
+	/* 아이디 비밀번호 선택시 그림자안나오게 */
+	.form-control:focus{
+		box-shadow:none; 
+	}
+	
+	/*라벨 폰트 사이즈 수정*/
+ 	label{
+		font-size: 0.8rem;
+		width:100%;
+		white-space: nowrap;
+  		overflow: hidden;
+		text-overflow: ellipsis;
+	} 
+	
+
+	
+	
+	/* 로그인 폼 위치잡기 */
 	.form-floating .form-control{
 		max-height: 20px;
 	}
@@ -35,28 +66,50 @@
 		padding-top: 4px;
 		padding-bottom: 4px;
 	}
+	
 
 </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
 <title>인스타그램</title>
 </head>
 <body>
 
 	<div class="container-fluid p-0">
 		<div class="row mx-auto p-0" id="860px" style="max-width:800px">
-			<div class="col mx-auto p-0" id="hidden" style="max-width: 400px; height: 500px;">
-				<img src="./img/iphone.png"/>
-					<!--아이폰 화면의 이미지가 변경 -->
-					<!--  -->
-					<!--  -->
-					<!--  -->
+			<div class="col mx-auto p-0" id="hidden" style="max-width: 300px; height: 500px;">
+			
+				<div class="position-relative">
+					<img style="position:relative; ; z-index: 4;" src="./img/iphone12pro.png"/>	
+					<div id="carouselExampleSlidesOnly" class="carousel slide position-absolute top-0 start-0" data-bs-ride="carousel" style="padding-top: 20px; padding-left: 20px; width:263px; ">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./img/iphone1.png" class="d-block w-100" alt="..." style="z-index: 1;">
+							</div>
+							<div class="carousel-item">
+								<img src="./img/iphone2.png" class="d-block w-100" alt="..." style="z-index: 2;">
+							</div>
+							<div class="carousel-item">
+								<img src="./img/iphone3.png" class="d-block w-100" alt="..." style="z-index: 3;">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+					
+				
+
 			</div>
 			
 			
-			<div class="col mx-auto p-0"  style="max-width: 400px; height: 500px;">
+			<div class="col mx-auto p-0"  style="max-width: 350px; height: 500px;">
 				<div class="border h-75">
-					<h3 class="text-center">Instagram</h3>
+					<div class="text-center mt-3 mb-5"><p class="fs-1" style="font-family: 'Lobster', cursive;">Instagram</p></div>
 					
-					<div class="form-floating mb-3 mx-auto w-75">
+					<div class="form-floating mt-2 mb-3 mx-auto w-75">
 						<input type="text" class="form-control" id="floatingInput" placeholder="name@example.com"">
 						<label for="floatingInput" class="text-secondary">전화번호, 사용자 이름 또는 이메일</label>
 					</div>
@@ -65,15 +118,32 @@
 						<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
 						<label for="floatingPassword" class="text-secondary">비밀번호</label>
 					</div>
+
+					<div class="d-grid gap-2 mx-auto">
+						<button type="button" class="btn btn-primary btn-sm mx-auto w-75" >로그인</button>
+					</div>		
+							
+					<div class="mt-1 mb-3 mx-auto w-75">
+						<div class="border-top" style="display: inline-block; width: 110px; height: 7px;"></div>
+						<div style="display: inline-block; padding-left: 15px; padding-right: 15px;">
+							<small class="fw-bolder text-secondary">또는</small>
+						</div>
+						<div class="border-top" style="display: inline-block; width: 110px; height: 7px;"></div>	
+					</div>
 					
-					<div class="d-grid gap-2 form-floating mx-auto w-75">
-						<button type="button" class="btn btn-info btn-sm">로그인</button>
+					<div class="mb-3 mx-auto w-75 text-center">
+						<div><small>페이스북으로 로그인</small></div>
+						<div><small>비밀번호를 잊으셨나요?</small></div>
 					</div>
 				</div>
-				
-				<div class="mt-3 border h-25">
+					
+				<div class="mt-3 border text-center">
+					<div class="pt-3 pb-3">계정이 없으신가요? 회원가입</div>
 				</div>
-				웹을 다운로드하세요.
+				
+				<div class="mt-3 mb-3 text-center">
+					웹을 다운로드하세요.
+				</div>
 				<p>
 				앱스토어 구글플레이
 			</div>
