@@ -54,8 +54,6 @@
 		text-overflow: ellipsis;
 	} 
 	
-
-	
 	
 	/* 로그인 폼 위치잡기 */
 	.form-floating .form-control{
@@ -66,8 +64,40 @@
 		padding-top: 4px;
 		padding-bottom: 4px;
 	}
+	/* 비밀번호를 잊으셨나요? */
+	#pwsearch{
+		font-size: 0.8rem;
+		text-decoration: none;
+	}
+	#pwsearch:link{
+		color:MidnightBlue;
+	}
+	#pwsearch:hover{
+		color:MidnightBlue;
+	}
+	#pwsearch:visited{
+		color:MidnightBlue;
+	}
+	#pwsearch:active{
+		color:SteelBlue;
+	}
 	
-
+	/* 회원가입 버튼 css */
+	#joinbtn{
+		text-decoration: none;
+	}
+	#joinbtn:link{
+		color:#0095f6;
+	}
+	#joinbtn:hover{
+		color:#0095f6;
+	}
+	#joinbtn:visited{
+		color:#0095f6;
+	}
+	#joinbtn:active {
+		color:#87CEFA;
+	}
 </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,29 +153,38 @@
 						<button type="button" class="btn btn-primary btn-sm mx-auto w-75" >로그인</button>
 					</div>		
 							
-					<div class="mt-1 mb-3 mx-auto w-75">
-						<div class="border-top" style="display: inline-block; width: 110px; height: 7px;"></div>
+					<div class="mt-1 mb-3 mx-auto w-75" style="text-align: center">
+						<div class="border-top" style="display: inline-block; width: 5rem; height: 7px;"></div>
 						<div style="display: inline-block; padding-left: 15px; padding-right: 15px;">
 							<small class="fw-bolder text-secondary">또는</small>
 						</div>
-						<div class="border-top" style="display: inline-block; width: 110px; height: 7px;"></div>	
+						<div class="border-top" style="display: inline-block; width: 5rem; height: 7px;"></div>	
 					</div>
 					
 					<div class="mb-3 mx-auto w-75 text-center">
-						<div><small>페이스북으로 로그인</small></div>
-						<div><small>비밀번호를 잊으셨나요?</small></div>
+						<div>페이스북으로 로그인</div>
+						<div class="mt-2"><a id="pwsearch"href="#">비밀번호를 잊으셨나요?</a></div>
 					</div>
 				</div>
 					
 				<div class="mt-3 border text-center">
-					<div class="pt-3 pb-3">계정이 없으신가요? 회원가입</div>
+					<div class="pt-3 pb-3">
+						계정이 없으신가요?
+						<a id="joinbtn" href="http://www.naver.com" class="fw-bolder">회원가입</a>
+					</div>
 				</div>
 				
 				<div class="mt-3 mb-3 text-center">
 					웹을 다운로드하세요.
 				</div>
-				<p>
-				앱스토어 구글플레이
+				<div style="width:100%; text-align: center;">
+					<div style="width:40%;display: inline-block; text-align: center;">
+						<img style="display: inline-block; width:8rem;" src="./img/appstore.png">
+					</div>
+					<div style="width:40%;display: inline-block; text-align: center;">
+						<img style="display: inline-block; width:8rem;" src="./img/googleplay.png">
+					</div>
+				</div>
 			</div>
 			
 		</div>
